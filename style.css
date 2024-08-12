@@ -122,6 +122,7 @@ li {
 /*Container Sobre nós */
 
 .sobre-container {
+    margin-top: 20px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -371,7 +372,7 @@ li {
 
     .containInitial-h2 {
         padding: 0 9px;
-        font-size: 30px;
+        font-size: 26px;
         margin-top: 20px;
     }
 
@@ -400,6 +401,11 @@ li {
         .p-parag-card {
             font-size: 20px;
         }
+    }
+
+    .orc-container{
+        margin-top: 200px;
+        height: 850px;
     }
 }
 
@@ -551,148 +557,757 @@ li {
 
 /* */
 
-@media (min-width:1024px) and (max-width:1152px){
-    .containInitial-h1{
-        font-size: 3rem;
-    }
 
+@media (min-width:760px) and (max-width:900px){
+    
     .containInitial-h2{
-        font-size: 2.2rem;
-    }
-
-    .sobre-title{
-        font-size: 3.4rem;
-    }
-
-    .title-firm{
-        font-size: 2.8rem;
+        font-size: 26px;
     }
 
     .container-content{
         display: flex;
         align-items: center;
-        flex-direction: row;
-        margin-left: 20px;
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding: 20px 15px;
+        margin-top: 25px;
+    }
+
+    .title-firm{
+        font-size: 36px;
+        padding-left: 0 !important;
+    }
+
+    .p-firm{
+        text-align: start;
+        padding-left: 0 !important;
+    }
+
+    .p-firm-1{
+        text-align: start;
+        padding-left: 0 !important;
     }
 
     .text-explain{
         display: flex;
-        flex: 1;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: start;
     }
 
-    .btn-orc-presentation{
-        font-size: 1.2rem;
-        font-weight: 500;
+    .card-container{
+        display: grid;
+        flex-direction: row;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
     }
 
-    .text-explain{
-        text-align: start;
-        width: 600px;
+    .servicos-container{
+        height: 1100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .redes-container{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20px;
+    }
+
+    .link-redes{
+        font-size: 17px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    .sobre-title,.serv-title,.orc-title{
+        font-size: 3rem;
+    }
+}
+
+@media (min-width:901px) and (max-width:1024px){
+    
+    .containInitial-h1{
+        font-size: 54px;
+    }
+
+    .containInitial-h2{
+        font-size: 32px;
+    }
+
+    .container-content{
+        display: flex;
+        align-items: center;
+        padding: 20px 19px;
+        margin-top: 25px;
     }
 
     .title-firm{
         font-size: 3.4rem;
+        padding-left: 0 !important;
+        font-weight: 600;
     }
 
     .p-firm{
-        font-size: 1.1rem;
-        text-align: justify;
+        text-align: start;
+        padding-left: 0 !important;
+        font-size: 1.2rem;
     }
 
     .p-firm-1{
-        font-size: 1.1rem;
-        text-align: justify;
+        text-align: start;
+        padding-left: 0 !important;
+        font-size: 1.2rem;
     }
 
-    .video{
-        width: 510px;
+    .text-explain{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
     }
 
-    .serv-title{
-        font-size: 3.4rem;
+    .card-container{
+        display: grid;
+        flex-direction: row;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
     }
 
     .servicos-container{
-        height: 800px;
+        height: 1100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .servicos-container01{
-        height: 670px;
+    .redes-container{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20px;
+    }
+
+    .link-redes{
+        font-size: 17px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    .sobre-title,.serv-title,.orc-title{
+        font-size: 3rem;
+    }
+
+    .video{
+        width: 580px;
+    }
+    .orc-container{
+        margin-top: 50px;
+        height: 800px;
+    }
+}
+
+@media (min-width:1025px) and (max-width:1280px){
+    
+    .containInitial-h1{
+        font-size: 4rem;
+    }
+
+    .containInitial-h2{
+        font-size: 2.6rem;
+    }
+
+    .container-content{
         display: flex;
         align-items: center;
+        padding: 20px 19px;
+        margin-top: 25px;
+    }
+
+    .title-firm{
+        font-size: 3.4rem;
+        padding-left: 0 !important;
+        font-weight: 600;
+    }
+
+    .p-firm{
+        text-align: start;
+        padding-left: 0 !important;
+        font-size: 1.2rem;
+    }
+
+    .p-firm-1{
+        text-align: start;
+        padding-left: 0 !important;
+        font-size: 1.2rem;
+    }
+
+    .text-explain{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .card-container{
+        display: grid;
+        flex-direction: row;
+        grid-template-columns: 1fr 1fr;
         justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .servicos-container{
+        height: 1100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .redes-container{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20px;
+    }
+
+    .link-redes{
+        font-size: 23px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 30px;
+    }
+
+    .sobre-title,.serv-title,.orc-title{
+        font-size: 4rem;
+    }
+
+    .video{
+        width: 610px;
+        height: 350px;
+    }
+    .orc-container{
+        margin-top: 50px;
+        height: 800px;
+    }
+    .p-orc1{
+        font-size: 1.39rem;
+    }
+
+    .p-orc2{
+        font-size: 1.39rem;
+    }
+    .orc-btn{
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width:1281px) and (max-width:1366px){
+    
+    .containInitial-h1{
+        font-size: 4rem;
+    }
+
+    .containInitial-h2{
+        font-size: 2.6rem;
+    }
+
+    .container-content{
+        display: flex;
+        align-items: center;
+        padding: 20px 19px;
+        margin-top: 25px;
+    }
+
+    .title-firm{
+        font-size: 3.4rem;
+        padding-left: 0 !important;
+        font-weight: 600;
+    }
+
+    .p-firm{
+        text-align: start;
+        padding-left: 0 !important;
+        font-size: 1.4rem;
+    }
+
+    .p-firm-1{
+        text-align: start;
+        padding-left: 0 !important;
+        font-size: 1.4rem;
+    }
+
+    .text-explain{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
     }
 
     .card-container{
         display: flex;
         flex-direction: row;
-        align-items: center;
         justify-content: center;
-        height: 350px;
+        align-items: center;
     }
+
     .card-1{
         margin-left: 10px;
-        height: 520px;
     }
 
     .card-1:nth-last-child(1){
         margin-right: 10px;
     }
 
-    .p-parag-card{
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 1.22rem;
-        text-align: center;
+    .servicos-container{
+        height: 900px;
     }
 
-    .orc-container{
+    .redes-container{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20px;
+    }
+
+    .link-redes{
+        font-size: 23px;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        margin-right: 30px;
     }
 
-    .orc-title{
-        font-size: 3.4rem;
-        padding: 0;
+    .sobre-title,.serv-title,.orc-title{
+        font-size: 4rem;
+    }
+
+    .video{
+        width: 610px;
+        height: 350px;
+    }
+    .orc-container{
+        margin-top: 50px;
+        height: 680px;
+    }
+    .p-orc1{
+        font-size: 1.39rem;
+    }
+
+    .p-orc2{
+        font-size: 1.39rem;
+    }
+    .orc-btn{
+        font-weight: 500;
+        font-size: 1.3rem;
     }
 
     .orc-contain-edit{
         display: flex;
-        align-items: center;
         justify-content: center;
-        padding:150px 10px;
+        align-items: center;
+        padding-top: 50px;
     }
 
     .text-orc{
         margin: 0;
     }
     
-    .p-orc1{
-        font-size: 30px;
+    .orc-title{
+        height: 150px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+}
+
+@media (min-width:1367px) and (max-width:1440px){
+    
+    .containInitial-h1{
+        font-size: 4rem;
     }
 
-    .p-orc2{
-        font-size: 22px;
+    .containInitial-h2{
+        font-size: 2.6rem;
     }
 
-    .orc-btn{
-        font-size: 24px;
-        font-weight: 500;
-        padding: 18px;
+    .container-content{
+        display: flex;
+        align-items: center;
+        padding: 20px 19px;
+        margin-top: 25px;
+    }
+
+    .title-firm{
+        font-size: 3.4rem;
+        padding-left: 0 !important;
+        font-weight: 600;
+    }
+
+    .p-firm{
+        text-align: start;
+        padding-left: 0 !important;
+        font-size: 1.4rem;
+    }
+
+    .p-firm-1{
+        text-align: start;
+        padding-left: 0 !important;
+        font-size: 1.4rem;
+    }
+
+    .text-explain{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .card-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-1{
+        margin-left: 10px;
+    }
+
+    .card-1:nth-last-child(1){
+        margin-right: 10px;
+    }
+
+    .servicos-container{
+        height: 900px;
     }
 
     .redes-container{
         display: flex;
         flex-direction: row;
-        gap: 30px;
-        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .link-redes{
+        font-size: 23px;
+        display: flex;
         justify-content: center;
-        padding-bottom: 25px;
+        align-items: center;
+        margin-right: 30px;
+    }
+
+    .sobre-title,.serv-title,.orc-title{
+        font-size: 4rem;
+    }
+
+    .video{
+        width: 610px;
+        height: 350px;
+    }
+    .orc-container{
+        margin-top: 50px;
+        height: 680px;
+    }
+    .p-orc1{
+        font-size: 1.39rem;
+    }
+
+    .p-orc2{
+        font-size: 1.39rem;
+    }
+    .orc-btn{
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+
+    .orc-contain-edit{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-orc{
+        margin: 0;
+    }
+    
+    .orc-title{
+        height: 150px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .logo-bf-orc{
+        width: 500px;
+        padding-right: 20px;
     }
 }
+
+@media (min-width:1441px) and (max-width:1680px){
+    
+    .containInitial-h1{
+        font-size: 4rem;
+    }
+
+    .containInitial-h2{
+        font-size: 2.6rem;
+    }
+
+    .container-content{
+        display: flex;
+        align-items: center;
+        padding: 20px 19px;
+        margin-top: 25px;
+    }
+
+    .title-firm{
+        font-size: 3.4rem;
+        padding-left: 0 !important;
+        font-weight: 600;
+    }
+
+    .p-firm{
+        text-align: start;
+        padding-left: 0 !important;
+        font-size: 1.4rem;
+    }
+
+    .p-firm-1{
+        text-align: start;
+        padding-left: 0 !important;
+        font-size: 1.4rem;
+    }
+
+    .text-explain{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .card-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-1{
+        margin-left: 10px;
+    }
+
+    .card-1:nth-last-child(1){
+        margin-right: 10px;
+    }
+
+    .servicos-container{
+        height: 900px;
+    }
+
+    .redes-container{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20px;
+    }
+
+    .link-redes{
+        font-size: 23px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 30px;
+    }
+
+    .sobre-title,.serv-title,.orc-title{
+        font-size: 4rem;
+    }
+
+    .video{
+        width: 610px;
+        height: 350px;
+    }
+    .orc-container{
+        margin-top: 50px;
+        height: 680px;
+    }
+    .p-orc1{
+        font-size: 1.39rem;
+    }
+
+    .p-orc2{
+        font-size: 1.39rem;
+    }
+    .orc-btn{
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+
+    .orc-contain-edit{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-orc{
+        margin: 0;
+    }
+    
+    .orc-title{
+        height: 150px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .logo-bf-orc{
+        width: 500px;
+        padding-right: 20px;
+    }
+}
+
+@media (min-width:1681px) and (max-width:1920px){
+
+    .bf-logo{
+        width: 300px;
+    }
+
+    .containInitial-h1{
+        font-size: 5rem;
+    }
+
+    .containInitial-h2{
+        font-size: 3.6rem;
+    }
+
+    .container-content{
+        display: flex;
+        align-items: center;
+        padding: 110px 19px;
+        margin-top: 25px;
+    }
+
+    .video{
+        width: 800px;
+        height: 450px;
+    }
+
+    .title-firm{
+        font-size: 5.2rem;
+        padding-left: 0 !important;
+        font-weight: 600;
+    }
+
+    .p-firm{
+        text-align: start;
+        padding-left: 0 !important;
+        font-size: 1.4rem;
+    }
+
+    .p-firm-1{
+        text-align: start;
+        padding-left: 0 !important;
+        font-size: 1.5rem;
+    }
+
+    .text-explain{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .card-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-1{
+        margin-left: 10px;
+    }
+
+    .card-1:nth-last-child(1){
+        margin-right: 10px;
+    }
+
+    .servicos-container{
+        height: 900px;
+    }
+
+    .redes-container{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20px;
+    }
+
+    .link-redes{
+        font-size: 23px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 30px;
+    }
+
+    .sobre-title,.serv-title,.orc-title{
+        font-size: 4rem;
+    }
+
+    .orc-container{
+        margin-top: 50px;
+        height: 850px;
+    }
+    .p-orc1{
+        font-size: 2rem;
+    }
+
+    .p-orc2{
+        font-size: 2rem;
+    }
+    .orc-btn{
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+
+    .orc-contain-edit{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-orc{
+        margin: 0;
+        width: 1008px;
+        height: 400px;
+    }
+    
+    .orc-title{
+        height: 150px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .btn-orc-presentation{
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    .logo-bf-orc{
+        width: 680px;
+        padding-right: 20px;
+    }
+}
+
+
