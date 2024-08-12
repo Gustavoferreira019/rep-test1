@@ -1,0 +1,698 @@
+:root {
+    --main-color: #d1ba8e;
+    --second-color: #654a14;
+    --padding-secoes: 15px;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    border: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--main-color);
+    font-family: 'Rubik', Calibri, Arial, sans-serif;
+    font-size: 0.96rem;
+    font-weight: 300;
+}
+
+.bg {
+    background: url('./assets/clock.jpg') no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+
+/* Header */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 15px;
+    flex-wrap: wrap;
+}
+
+.bf-logo {
+    width: 200px;
+}
+
+nav {
+    flex-basis: 100%;
+    height: 0;
+    overflow: hidden;
+}
+
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+#chk-toggle {
+    display: none;
+}
+
+#toggle {
+    display: inline-block;
+    padding: 12px;
+}
+
+#toggle span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: #8d96a7;
+    margin: 2px;
+}
+
+#chk-toggle:checked~nav {
+    height: auto;
+    margin-bottom: 0px;
+    margin-top: -36px;
+}
+
+li {
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 1px 1px 4px #000;
+    margin: 5px;
+    transition: height 2.5s;
+}
+
+/* Classe para esconder o menu */
+.hide-menu {
+    display: none;
+}
+
+
+/* Container inicial*/
+
+.contain-initial {
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containInitial-h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 1px 2px 0px #000;
+}
+
+.containInitial-h2 {
+    text-align: center;
+    font-size: 26px;
+    color: #fff;
+    text-shadow: 1px 2px 0px #000;
+}
+
+/*Container Sobre nós */
+
+.sobre-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sobre-title {
+    text-align: center;
+    color: var(--second-color);
+    font-size: 1.7rem;
+    margin-top: -50px;
+    overflow: hidden;
+}
+
+.text-explain {
+    text-align: center;
+    color: var(--second-color);
+}
+
+
+.container-video {
+    text-align: center;
+}
+
+.btn-orc-presentation {
+    background-color: var(--second-color);
+    padding: 20px;
+    color: white;
+    font-weight: 700;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+}
+
+.link-wpp {
+    display: flex;
+    justify-content: center;
+}
+
+.title-firm {
+    font-size: 38px;
+    font-weight: 400;
+    padding: 15px 5px;
+}
+
+.p-firm {
+    font-size: 1.08rem;
+    font-weight: 400;
+    padding: 15px 5px;
+}
+
+.p-firm-1 {
+    font-weight: 600;
+    padding: 15px 5px;
+}
+
+/*Container Serviços*/
+
+.servicos-container {
+    height: 2010px;
+}
+
+.serv-title {
+    text-align: center;
+    color: var(--second-color);
+    font-size: 1.7rem;
+    font-weight: 700;
+    padding-top: 30px;
+}
+
+.card-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    align-items: center;
+}
+
+.card-1 {
+    height: 460px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: start;
+    margin-bottom: 25px;
+    border: 2px solid var(--second-color);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.card-1:hover {
+    background-color: var(--second-color);
+    width: 355px;
+
+    .bi-map-fill,
+    .bi-house-door-fill,
+    .bi-recycle,
+    .bi-buildings-fill {
+        color: white;
+    }
+
+    .p-title-card {
+        color: white;
+    }
+
+    .p-title-card {
+        font-size: 2.2rem;
+    }
+
+    .p-parag-card {
+        font-size: 0.9rem;
+    }
+}
+
+.bi-map-fill {
+    font-size: 100px;
+    color: var(--second-color);
+}
+
+.bi-house-door-fill {
+    font-size: 100px;
+    color: var(--second-color);
+}
+
+.bi-recycle {
+    font-size: 100px;
+    color: var(--second-color);
+}
+
+.bi-buildings-fill {
+    font-size: 100px;
+    color: var(--second-color);
+}
+
+.p-title-card {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--second-color);
+    margin-top: 45px;
+    margin-bottom: 25px;
+}
+
+.p-parag-card {
+    font-size: 17px;
+    color: var(--second-color);
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 1px 0px 5px #000;
+}
+
+/*Container orçamento*/
+.orc-container {
+    height: 100%;
+    width: 100%;
+}
+
+.orc-title {
+    height: 60px;
+    text-align: center;
+    color: var(--second-color);
+    font-size: 1.7rem;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.text-orc {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 125px;
+    height: 250px;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+.p-orc1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--second-color);
+}
+
+.p-orc2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--second-color);
+}
+
+.orc-btn {
+    background-color: var(--second-color);
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    gap: 15px;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-bf-orc {
+    width: 350px;
+    text-align: center;
+}
+
+/* Footer */
+
+.redes-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.bi-instagram,
+.bi-facebook,
+.bi-telephone-fill,
+.bi-envelope-at-fill {
+    color: var(--second-color);
+    font-size: 18px;
+}
+
+.p-redes {
+    color: var(--second-color);
+}
+
+.link-redes {
+    display: flex;
+    gap: 7px;
+    font-size: 20px;
+}
+
+@media (min-width:400px) and (max-width:425px) {
+    .containInitial-h1 {
+        padding: 0 5px;
+        font-size: 40px;
+    }
+
+    .containInitial-h2 {
+        padding: 0 9px;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .p-firm {
+        padding: 0 10px;
+    }
+
+    .video {
+        width: 350px;
+    }
+
+
+    .card-1 {
+        height: 510px;
+    }
+
+    .servicos-container {
+        margin-bottom: 150px;
+    }
+
+    .p-parag-card {
+        font-size: 18px;
+    }
+
+    .card-1:hover {
+        .p-parag-card {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (min-width:426px) and (max-width: 600px) {
+    .contain-initial {
+        padding: 0 5px;
+    }
+
+    .containInitial-h1 {
+        margin-bottom: 10px;
+    }
+
+    .sobre-title {
+        font-size: 2rem;
+    }
+
+    .p-firm {
+        padding: 0 5px;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    .btn-orc-presentation {
+        width: 225px;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .video {
+        width: 450px;
+        margin-top: 20px;
+        border-radius: 18px;
+    }
+
+    .serv-title {
+        font-size: 2rem;
+    }
+
+    .card-1:hover {
+        .p-parag-card {
+            font-size: 17px;
+        }
+    }
+
+    .orc-title {
+        font-size: 2rem;
+    }
+
+    .p-orc1 {
+        font-size: 1.7rem;
+    }
+
+    .p-orc2 {
+        font-size: 1.3rem;
+    }
+
+    .orc-btn {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+}
+
+@media (min-width:426px) and (max-width:450px) {
+    .video {
+        width: 395px;
+    }
+}
+
+@media (min-width:601px) and (max-width:768px) {
+    .bf-logo {
+        width: 200px;
+    }
+
+    .containInitial-h1 {
+        font-size: 38px;
+    }
+
+    .containInitial-h2 {
+        font-size: 34px;
+        margin-top: 10px;
+    }
+
+    .sobre-title {
+        font-size: 2.4rem;
+    }
+
+    .title-firm {
+        font-size: 2.6rem;
+    }
+
+    .p-firm {
+        padding: 0 30px;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .p-firm-1 {
+        font-size: 22px;
+        padding: 0 15px;
+        margin-bottom: 15px;
+    }
+
+    .btn-orc-presentation {
+        margin-bottom: 15px;
+        font-weight: 600;
+        font-size: 19px;
+    }
+
+    .video {
+        width: 480px;
+    }
+
+    .serv-title {
+        font-size: 2.6rem;
+    }
+
+    .p-parag-card{
+        font-size: 17px;
+        padding: 0 2px;
+        text-align: center;
+    }
+
+    .card-1:hover{
+            height: 490px;
+
+        .p-parag-card{
+            font-size: 20px;
+            padding: 0 2px;
+            text-align: center;
+        }
+    }
+
+    .orc-title{
+        font-size: 2.6rem;
+    }
+
+    .orc-btn{
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+/* Falta entre 768 e 1024px */
+
+/* */
+
+@media (min-width:1024px) and (max-width:1152px){
+    .containInitial-h1{
+        font-size: 3rem;
+    }
+
+    .containInitial-h2{
+        font-size: 2.2rem;
+    }
+
+    .sobre-title{
+        font-size: 3.4rem;
+    }
+
+    .title-firm{
+        font-size: 2.8rem;
+    }
+
+    .container-content{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-left: 20px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .text-explain{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn-orc-presentation{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .text-explain{
+        text-align: start;
+        width: 600px;
+    }
+
+    .title-firm{
+        font-size: 3.4rem;
+    }
+
+    .p-firm{
+        font-size: 1.1rem;
+        text-align: justify;
+    }
+
+    .p-firm-1{
+        font-size: 1.1rem;
+        text-align: justify;
+    }
+
+    .video{
+        width: 510px;
+    }
+
+    .serv-title{
+        font-size: 3.4rem;
+    }
+
+    .servicos-container{
+        height: 800px;
+    }
+
+    .servicos-container01{
+        height: 670px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 350px;
+    }
+    .card-1{
+        margin-left: 10px;
+        height: 520px;
+    }
+
+    .card-1:nth-last-child(1){
+        margin-right: 10px;
+    }
+
+    .p-parag-card{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.22rem;
+        text-align: center;
+    }
+
+    .orc-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .orc-title{
+        font-size: 3.4rem;
+        padding: 0;
+    }
+
+    .orc-contain-edit{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding:150px 10px;
+    }
+
+    .text-orc{
+        margin: 0;
+    }
+    
+    .p-orc1{
+        font-size: 30px;
+    }
+
+    .p-orc2{
+        font-size: 22px;
+    }
+
+    .orc-btn{
+        font-size: 24px;
+        font-weight: 500;
+        padding: 18px;
+    }
+
+    .redes-container{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 25px;
+    }
+}
