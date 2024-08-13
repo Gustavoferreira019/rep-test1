@@ -364,7 +364,7 @@ li {
     font-size: 20px;
 }
 
-@media (min-width:400px) and (max-width:425px) {
+@media (min-width:389px) and (max-width:425px) {
     .containInitial-h1 {
         padding: 0 5px;
         font-size: 40px;
@@ -468,6 +468,10 @@ li {
     .orc-btn {
         font-size: 1.2rem;
         font-weight: 500;
+    }
+
+    .redes-container{
+        padding-top: 30px;
     }
 }
 
