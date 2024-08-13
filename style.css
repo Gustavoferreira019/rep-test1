@@ -382,6 +382,11 @@ li {
 
     .video {
         width: 350px;
+        outline: none;
+    }
+
+    .video::-webkit-media-controls {
+        display: none !important;
     }
 
 
@@ -406,6 +411,12 @@ li {
     .orc-container{
         margin-top: 200px;
         height: 850px;
+    }
+}
+
+@media(min-width:389px) and (min-height:630px){
+    .sobre-container{
+        height: 725px;
     }
 }
 
@@ -441,6 +452,11 @@ li {
         width: 450px;
         margin-top: 20px;
         border-radius: 18px;
+        outline: none;
+    }
+
+    .video::-webkit-media-controls {
+        display: none !important;
     }
 
     .serv-title {
@@ -478,6 +494,11 @@ li {
 @media (min-width:426px) and (max-width:450px) {
     .video {
         width: 395px;
+        outline: none;
+    }
+
+    .video::-webkit-media-controls {
+        display: none !important;
     }
 }
 
@@ -525,6 +546,11 @@ li {
 
     .video {
         width: 480px;
+        outline: none;
+    }
+
+    .video::-webkit-media-controls {
+        display: none !important;
     }
 
     .serv-title {
@@ -710,6 +736,11 @@ li {
 
     .video{
         width: 580px;
+        outline: none;
+    }
+
+    .video::-webkit-media-controls {
+        display: none !important;
     }
     .orc-container{
         margin-top: 50px;
@@ -796,6 +827,11 @@ li {
     .video{
         width: 610px;
         height: 350px;
+        outline: none;
+    }
+
+    .video::-webkit-media-controls {
+        display: none !important;
     }
     .orc-container{
         margin-top: 50px;
@@ -895,6 +931,11 @@ li {
     .video{
         width: 610px;
         height: 350px;
+        outline: none;
+    }
+
+    .video::-webkit-media-controls {
+        display: none !important;
     }
     .orc-container{
         margin-top: 50px;
@@ -1014,6 +1055,11 @@ li {
     .video{
         width: 610px;
         height: 350px;
+        outline: none;
+    }
+
+    .video::-webkit-media-controls {
+        display: none !important;
     }
     .orc-container{
         margin-top: 50px;
@@ -1137,6 +1183,11 @@ li {
     .video{
         width: 610px;
         height: 350px;
+        outline: none;
+    }
+
+    .video::-webkit-media-controls {
+        display: none !important;
     }
     .orc-container{
         margin-top: 50px;
@@ -1203,6 +1254,11 @@ li {
     .video{
         width: 800px;
         height: 450px;
+        outline: none;
+    }
+
+    .video::-webkit-media-controls {
+        display: none !important;
     }
 
     .title-firm{
