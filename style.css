@@ -1,6 +1,7 @@
 :root {
     --main-color: #d1ba8e;
     --second-color: #654a14;
+    --hover-color: #42300c;
     --padding-secoes: 15px;
 }
 
@@ -11,6 +12,17 @@
     box-sizing: border-box;
     position: relative;
     border: none;
+    font-family: 'Rubik', Calibri, Arial, sans-serif;
+
+    button {
+        cursor: pointer;
+    }
+
+    button:hover {
+        padding: 22px 23px;
+        background-color: var(--hover-color);
+        transition: 0.4s;
+    }
 }
 
 html,
@@ -20,7 +32,6 @@ body {
 
 body {
     background-color: var(--main-color);
-    font-family: 'Rubik', Calibri, Arial, sans-serif;
     font-size: 0.96rem;
     font-weight: 300;
 }
@@ -132,7 +143,7 @@ li {
 .sobre-title {
     text-align: center;
     color: var(--second-color);
-    font-size: 1.7rem;
+    font-size: 2.3rem;
     margin-top: -50px;
     overflow: hidden;
 }
@@ -151,12 +162,13 @@ li {
     background-color: var(--second-color);
     padding: 20px;
     color: white;
-    font-weight: 700;
     border-radius: 8px;
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 1rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+    font-family: "Rubik", sans-serif;
 }
 
 .link-wpp {
@@ -165,8 +177,8 @@ li {
 }
 
 .title-firm {
-    font-size: 38px;
-    font-weight: 400;
+    font-size: 2.8rem;
+    font-weight: 600;
     padding: 15px 5px;
 }
 
@@ -190,7 +202,7 @@ li {
 .serv-title {
     text-align: center;
     color: var(--second-color);
-    font-size: 1.7rem;
+    font-size: 2.3rem;
     font-weight: 700;
     padding-top: 30px;
 }
@@ -211,6 +223,7 @@ li {
     flex-direction: column;
     text-align: center;
     justify-content: start;
+    align-items: center;
     margin-bottom: 25px;
     border: 2px solid var(--second-color);
     border-radius: 15px;
@@ -270,12 +283,16 @@ li {
 }
 
 .p-parag-card {
-    font-size: 17px;
     color: var(--second-color);
     text-align: center;
-    font-weight: 400;
+    font-weight: 300;
     color: #fff;
-    text-shadow: 1px 0px 5px #000;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: "Rubik", sans-serif;
+    text-shadow: 0px -1px 10px var(--second-color);
+    width: 262px;
+    padding: 15px 0 0 0;
 }
 
 /*Container orçamento*/
@@ -288,16 +305,17 @@ li {
     height: 60px;
     text-align: center;
     color: var(--second-color);
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     font-weight: 700;
-    padding-top: 20px;
+    padding-top: 5px;
+    margin-top: 20px;
 }
 
 .text-orc {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 125px;
+    margin-top: 80px;
     height: 250px;
     justify-content: center;
     padding: 0 15px;
@@ -305,7 +323,7 @@ li {
 
 .p-orc1 {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--second-color);
 }
 
@@ -317,12 +335,24 @@ li {
 
 .orc-btn {
     background-color: var(--second-color);
-    padding: 15px 20px;
+    padding: 15px 25px;
     border-radius: 5px;
     color: #fff;
-    font-weight: 700;
-    font-size: 1rem;
     gap: 15px;
+    font-weight: 400;
+    font-size: 1.1rem;
+    font-family: "Rubik", sans-serif;
+}
+
+.orc-btn-header {
+    background-color: var(--second-color);
+    padding: 15px 25px;
+    border-radius: 5px;
+    color: #fff;
+    gap: 15px;
+    font-weight: 400;
+    font-size: 1.1rem;
+    font-family: "Rubik", sans-serif;
 }
 
 .img-container {
@@ -332,7 +362,7 @@ li {
 }
 
 .logo-bf-orc {
-    width: 350px;
+    width: 270px;
     text-align: center;
 }
 
@@ -344,6 +374,7 @@ li {
     justify-content: center;
     align-items: center;
     padding-bottom: 10px;
+    padding-top: 10px !important;
 }
 
 .bi-instagram,
@@ -364,15 +395,15 @@ li {
     font-size: 20px;
 }
 
-@media (min-width:389px) and (max-width:425px) {
+@media (min-width:320px) and (max-width:360px) {
     .containInitial-h1 {
         padding: 0 5px;
-        font-size: 44px;
+        font-size: 40px;
     }
 
     .containInitial-h2 {
         padding: 0 9px;
-        font-size: 26px;
+        font-size: 23px;
         margin-top: 20px;
     }
 
@@ -381,7 +412,7 @@ li {
     }
 
     .video {
-        width: 350px;
+        width: 320px;
         outline: none;
     }
 
@@ -408,15 +439,83 @@ li {
         }
     }
 
-    .orc-container{
+    .redes-container {
+        padding: 5px 0 15px 0 !important;
+    }
+
+    .orc-container {
         margin-top: 200px;
         height: 850px;
     }
 }
 
-@media(min-width:375px) and (min-height:600px){
-    .sobre-container{
+@media (min-width:389px) and (max-width:425px) {
+    .containInitial-h1 {
+        padding: 0 5px;
+        font-size: 46px;
+    }
+
+    .containInitial-h2 {
+        padding: 0 9px;
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .p-firm {
+        padding: 0 14px;
+    }
+
+    .video {
+        width: 360px;
+        height: 160px;
+        margin-top: 10px;
+    }
+
+    .video::-webkit-media-controls {
+        display: none !important;
+    }
+
+    .card-1 {
+        height: 490px;
+    }
+
+    .servicos-container {
+        margin-bottom: 150px;
+    }
+
+    .p-parag-card {
+        font-size: 16px;
+        padding-top: 25px;
+    }
+
+    .card-1:hover {
+        .p-parag-card {
+            font-size: 17px;
+            text-align: start;
+        }
+    }
+
+    .orc-container {
+        margin-top: 200px;
+        height: 680px;
+    }
+
+    .redes-container {
+        padding: 5px 0 15px 0 !important;
+    }
+
+    .p-orc1 {
+        line-height: 1.1;
+    }
+}
+
+@media(min-width:360px) and (min-height:550px) {
+    .sobre-container {
         height: 740px;
+    }
+
+    .redes-container {
+        padding: 115px 0 25px 0;
     }
 }
 
@@ -429,8 +528,12 @@ li {
         margin-bottom: 10px;
     }
 
+    .containInitial-h2 {
+        font-size: 1.5rem;
+    }
+
     .sobre-title {
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
 
     .p-firm {
@@ -445,7 +548,7 @@ li {
         display: flex;
         justify-content: center;
         font-size: 18px;
-        font-weight: 500;
+        font-weight: 400;
     }
 
     .video {
@@ -460,7 +563,7 @@ li {
     }
 
     .serv-title {
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
 
     .card-1:hover {
@@ -470,15 +573,15 @@ li {
     }
 
     .orc-title {
-        font-size: 2rem;
+        font-size: 1.9rem;
     }
 
     .p-orc1 {
-        font-size: 1.7rem;
+        font-size: 1.2rem;
     }
 
     .p-orc2 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .orc-btn {
@@ -486,7 +589,7 @@ li {
         font-weight: 500;
     }
 
-    .redes-container{
+    .redes-container {
         padding-top: 30px;
     }
 }
@@ -502,7 +605,27 @@ li {
     }
 }
 
-@media (min-width:601px) and (max-width:768px) {
+@media(min-width:434px) and (max-width:475px) {
+    .containInitial-h1 {
+        font-size: 44px;
+    }
+
+    .containInitial-h2 {
+        font-size: 22px;
+    }
+}
+
+@media(min-width:476px) and (max-width:600px) {
+    .containInitial-h1 {
+        font-size: 48px;
+    }
+
+    .containInitial-h2 {
+        font-size: 30px;
+    }
+}
+
+@media (min-width:601px) and (max-width:729px) {
     .bf-logo {
         width: 200px;
     }
@@ -522,6 +645,7 @@ li {
 
     .title-firm {
         font-size: 2.6rem;
+        font-weight: 600;
     }
 
     .p-firm {
@@ -557,67 +681,70 @@ li {
         font-size: 2.6rem;
     }
 
-    .p-parag-card{
-        font-size: 17px;
+    .p-parag-card {
+        font-size: 15px;
         padding: 0 2px;
         text-align: center;
+        padding-top: 10px;
     }
 
-    .card-1:hover{
-            height: 490px;
+    .card-1:hover {
+        height: 490px;
 
-        .p-parag-card{
-            font-size: 20px;
+        .p-parag-card {
+            font-size: 17px;
             padding: 0 2px;
             text-align: center;
         }
     }
 
-    .orc-title{
+    .orc-title {
         font-size: 2.6rem;
     }
 
-    .orc-btn{
+    .orc-btn {
         font-size: 20px;
         font-weight: 500;
     }
+
 }
 
-@media (min-width:760px) and (max-width:900px){
-    
-    .containInitial-h2{
-        font-size: 26px;
+@media (min-width:730px) and (max-width:900px) {
+
+    .containInitial-h2 {
+        font-size: 25px;
     }
 
-    .container-content{
+    .container-content {
         display: flex;
         align-items: center;
         padding: 20px 15px;
         margin-top: 25px;
     }
 
-    .title-firm{
+    .title-firm {
         font-size: 36px;
         padding-left: 0 !important;
+        font-weight: 600;
     }
 
-    .p-firm{
+    .p-firm {
         text-align: start;
         padding-left: 0 !important;
     }
 
-    .p-firm-1{
+    .p-firm-1 {
         text-align: start;
         padding-left: 0 !important;
     }
 
-    .text-explain{
+    .text-explain {
         display: flex;
         flex-direction: column;
         align-items: start;
     }
 
-    .card-container{
+    .card-container {
         display: grid;
         flex-direction: row;
         grid-template-columns: 1fr 1fr;
@@ -626,7 +753,7 @@ li {
         gap: 30px;
     }
 
-    .servicos-container{
+    .servicos-container {
         height: 1100px;
         display: flex;
         flex-direction: column;
@@ -634,67 +761,77 @@ li {
         align-items: center;
     }
 
-    .redes-container{
+    .redes-container {
         display: flex;
         flex-direction: row;
         padding-bottom: 20px;
     }
 
-    .link-redes{
-        font-size: 17px;
+    .link-redes {
+        font-size: 16px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-right: 10px;
     }
 
-    .sobre-title,.serv-title,.orc-title{
+    .sobre-title,
+    .serv-title,
+    .orc-title {
         font-size: 3rem;
+    }
+
+    .logo-bf-orc {
+        width: 318px;
     }
 }
 
-@media (min-width:901px) and (max-width:1024px){
-    
-    .containInitial-h1{
+@media (min-width:901px) and (max-width:1023px) {
+
+    .sobre-container {
+        height: 685px;
+    }
+
+    .containInitial-h1 {
         font-size: 54px;
     }
 
-    .containInitial-h2{
+    .containInitial-h2 {
         font-size: 32px;
     }
 
-    .container-content{
+    .container-content {
         display: flex;
         align-items: center;
         padding: 20px 19px;
         margin-top: 25px;
     }
 
-    .title-firm{
+    .title-firm {
         font-size: 3.4rem;
         padding-left: 0 !important;
         font-weight: 600;
     }
 
-    .p-firm{
+    .p-firm {
         text-align: start;
         padding-left: 0 !important;
         font-size: 1.2rem;
     }
 
-    .p-firm-1{
+    .p-firm-1 {
         text-align: start;
         padding-left: 0 !important;
         font-size: 1.2rem;
     }
 
-    .text-explain{
+    .text-explain {
         display: flex;
         flex-direction: column;
         align-items: start;
     }
 
-    .card-container{
+    .card-container {
         display: grid;
         flex-direction: row;
         grid-template-columns: 1fr 1fr;
@@ -703,7 +840,7 @@ li {
         gap: 50px;
     }
 
-    .servicos-container{
+    .servicos-container {
         height: 1100px;
         display: flex;
         flex-direction: column;
@@ -711,13 +848,13 @@ li {
         align-items: center;
     }
 
-    .redes-container{
+    .redes-container {
         display: flex;
         flex-direction: row;
         padding-bottom: 20px;
     }
 
-    .link-redes{
+    .link-redes {
         font-size: 17px;
         display: flex;
         justify-content: center;
@@ -725,66 +862,130 @@ li {
         margin-right: 10px;
     }
 
-    .sobre-title,.serv-title,.orc-title{
+    .sobre-title,
+    .serv-title,
+    .orc-title {
         font-size: 3rem;
     }
 
-    .video{
-        width: 580px;
+    .video {
+        width: 400px;
         outline: none;
     }
 
     .video::-webkit-media-controls {
         display: none !important;
     }
-    .orc-container{
+
+    .orc-container {
         margin-top: 50px;
-        height: 800px;
+        height: 690px;
+    }
+
+    .logo-bf-orc {
+        width: 350px;
+    }
+
+    .orc-contain-edit {
+        display: flex;
+        justify-content: center;
+        padding-top: 110px;
+        padding-left: 18px;
+        padding-right: 18px;
     }
 }
 
-@media (min-width:1025px) and (max-width:1280px){
+@media (min-width:1024px) and (max-width:1280px) {
+
+    nav {
+        height: auto;
+        overflow-y: unset;
+        flex-basis: unset;
+    }
+
+    #toggle {
+        display: none;
+    }
+
+    nav ul li {
+        display: inline-block !important;
+        padding: 15px 7px;
+        font-size: 1.6rem;
+    }
+
+    nav ul li a:hover {
+        color: var(--hover-color);
+        transition: 0.3s;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    #nav-menu li {
+        position: relative;
+    }
+
+    .underline {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        background-color: var(--hover-color);
+        width: 0;
+        transition: 0.5s ease;
+    }
     
-    .containInitial-h1{
-        font-size: 4rem;
+    #nav-menu li:hover .underline {
+        width: 100%;
     }
 
-    .containInitial-h2{
-        font-size: 2.6rem;
+    .p-redes {
+        padding-bottom: 3px;
     }
 
-    .container-content{
+    .containInitial-h1 {
+        font-size: 3.6rem;
+    }
+
+    .containInitial-h2 {
+        font-size: 2.2rem;
+    }
+
+    .container-content {
         display: flex;
         align-items: center;
         padding: 20px 19px;
         margin-top: 25px;
     }
 
-    .title-firm{
+    .title-firm {
         font-size: 3.4rem;
         padding-left: 0 !important;
         font-weight: 600;
     }
 
-    .p-firm{
+    .p-firm {
         text-align: start;
         padding-left: 0 !important;
         font-size: 1.2rem;
     }
 
-    .p-firm-1{
+    .p-firm-1 {
         text-align: start;
         padding-left: 0 !important;
         font-size: 1.2rem;
     }
 
-    .text-explain{
+    .text-explain {
         display: flex;
         flex-direction: column;
         align-items: start;
     }
 
-    .card-container{
+    .card-container {
         display: grid;
         flex-direction: row;
         grid-template-columns: 1fr 1fr;
@@ -793,7 +994,7 @@ li {
         gap: 50px;
     }
 
-    .servicos-container{
+    .servicos-container {
         height: 1100px;
         display: flex;
         flex-direction: column;
@@ -801,25 +1002,32 @@ li {
         align-items: center;
     }
 
-    .redes-container{
+    .redes-container {
         display: flex;
         flex-direction: row;
         padding-bottom: 20px;
     }
 
-    .link-redes{
-        font-size: 23px;
+    .link-redes {
+        font-size: 21px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-right: 30px;
+        position: relative;
     }
 
-    .sobre-title,.serv-title,.orc-title{
+    .link-redes:hover .underline {
+        width: 100%;
+    }
+
+    .sobre-title,
+    .serv-title,
+    .orc-title {
         font-size: 4rem;
     }
 
-    .video{
+    .video {
         width: 610px;
         height: 350px;
         outline: none;
@@ -828,102 +1036,180 @@ li {
     .video::-webkit-media-controls {
         display: none !important;
     }
-    .orc-container{
+
+    .orc-container {
         margin-top: 50px;
         height: 800px;
     }
-    .p-orc1{
+
+    .orc-contain-edit {
+        display: flex;
+        justify-content: center;
+        padding-top: 110px;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .p-orc1 {
         font-size: 1.39rem;
     }
 
-    .p-orc2{
+    .p-orc2 {
         font-size: 1.39rem;
     }
-    .orc-btn{
+
+    .orc-btn {
         font-weight: 500;
         font-size: 1.3rem;
     }
+
+    .text-orc {
+        margin-top: 120px;
+    }
 }
 
-@media (min-width:1281px) and (max-width:1366px){
+@media (min-width:1030px) and (max-width:1280px) {
+    .logo-bf-orc {
+        width: 450px;
+    }
+}
+
+
+@media (min-width:1281px) and (max-width:1366px) {
+
+    nav {
+        height: auto;
+        overflow-y: unset;
+        flex-basis: unset;
+    }
+
+    #toggle {
+        display: none;
+    }
+
+    nav ul li {
+        display: inline-block !important;
+        padding: 12px 25px;
+        font-size: 1.6rem;
+    }
+
+    nav ul li a:hover {
+        color: var(--hover-color);
+        transition: 0.3s;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    #nav-menu li {
+        position: relative;
+    }
+
+    .underline {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        background-color: var(--hover-color);
+        width: 0;
+        transition: 0.5s ease;
+    }
     
-    .containInitial-h1{
+    #nav-menu li:hover .underline {
+        width: 100%;
+    }
+
+    .p-redes {
+        padding-bottom: 3px;
+    }
+
+    .containInitial-h1 {
         font-size: 4rem;
     }
 
-    .containInitial-h2{
+    .containInitial-h2 {
         font-size: 2.6rem;
     }
 
-    .container-content{
+    .container-content {
         display: flex;
         align-items: center;
         padding: 20px 19px;
         margin-top: 25px;
     }
 
-    .title-firm{
+    .title-firm {
         font-size: 3.4rem;
         padding-left: 0 !important;
         font-weight: 600;
     }
 
-    .p-firm{
+    .p-firm {
         text-align: start;
         padding-left: 0 !important;
         font-size: 1.4rem;
     }
 
-    .p-firm-1{
+    .p-firm-1 {
         text-align: start;
         padding-left: 0 !important;
         font-size: 1.4rem;
     }
 
-    .text-explain{
+    .text-explain {
         display: flex;
         flex-direction: column;
         align-items: start;
     }
 
-    .card-container{
+    .card-container {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
     }
 
-    .card-1{
+    .card-1 {
         margin-left: 10px;
     }
 
-    .card-1:nth-last-child(1){
+    .card-1:nth-last-child(1) {
         margin-right: 10px;
     }
 
-    .servicos-container{
-        height: 900px;
+    .servicos-container {
+        height: 750px;
     }
 
-    .redes-container{
+    .redes-container {
         display: flex;
         flex-direction: row;
         padding-bottom: 20px;
     }
 
-    .link-redes{
+    .link-redes {
         font-size: 23px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-right: 30px;
+        position: relative;
     }
 
-    .sobre-title,.serv-title,.orc-title{
+    .link-redes:hover .underline {
+        width: 100%;
+    }
+
+    .sobre-title,
+    .serv-title,
+    .orc-title {
         font-size: 4rem;
     }
 
-    .video{
+    .video {
         width: 610px;
         height: 350px;
         outline: none;
@@ -932,34 +1218,44 @@ li {
     .video::-webkit-media-controls {
         display: none !important;
     }
-    .orc-container{
+
+    .orc-container {
         margin-top: 50px;
-        height: 680px;
+        padding-top: 5px;
+        height: 700px;
     }
-    .p-orc1{
+
+    .p-orc1 {
         font-size: 1.39rem;
     }
 
-    .p-orc2{
+    .p-orc2 {
         font-size: 1.39rem;
     }
-    .orc-btn{
+
+    .orc-btn {
         font-weight: 500;
         font-size: 1.3rem;
     }
 
-    .orc-contain-edit{
+    .orc-contain-edit {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 50px;
+        padding-top: 5px;
+        padding-right: 10px;
+        padding-left: 10px;
     }
 
-    .text-orc{
+    .logo-bf-orc {
+        width: 450px;
+    }
+
+    .text-orc {
         margin: 0;
     }
-    
-    .orc-title{
+
+    .orc-title {
         height: 150px;
         text-align: center;
         display: flex;
@@ -969,85 +1265,145 @@ li {
     }
 }
 
-@media (min-width:1367px) and (max-width:1440px){
+@media (min-width:1367px) and (max-width:1440px) {
+
+    nav {
+        height: auto;
+        overflow-y: unset;
+        flex-basis: unset;
+    }
+
+    #toggle {
+        display: none;
+    }
+
+    nav ul li {
+        display: inline-block !important;
+        padding: 12px 30px;
+        font-size: 1.6rem;
+    }
+
+    nav ul li a:hover {
+        color: var(--hover-color);
+        transition: 0.3s;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    #nav-menu li {
+        position: relative;
+    }
+
+    .underline {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        background-color: var(--hover-color);
+        width: 0;
+        transition: 0.5s ease;
+    }
     
-    .containInitial-h1{
-        font-size: 4rem;
+    #nav-menu li:hover .underline {
+        width: 100%;
     }
 
-    .containInitial-h2{
-        font-size: 2.6rem;
+    nav a:hover {
+        color: var(--second-color);
     }
 
-    .container-content{
+    .p-redes {
+        padding-bottom: 3px;
+    }
+
+    .containInitial-h1 {
+        font-size: 3.8rem;
+    }
+
+    .containInitial-h2 {
+        font-size: 2.5rem;
+    }
+
+    .container-content {
         display: flex;
         align-items: center;
         padding: 20px 19px;
         margin-top: 25px;
     }
 
-    .title-firm{
+    .title-firm {
         font-size: 3.4rem;
         padding-left: 0 !important;
         font-weight: 600;
     }
 
-    .p-firm{
+    .p-firm {
         text-align: start;
         padding-left: 0 !important;
         font-size: 1.4rem;
     }
 
-    .p-firm-1{
+    .p-firm-1 {
         text-align: start;
         padding-left: 0 !important;
         font-size: 1.4rem;
     }
 
-    .text-explain{
+    .text-explain {
         display: flex;
         flex-direction: column;
         align-items: start;
     }
 
-    .card-container{
+    .card-container {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
     }
 
-    .card-1{
+    .card-1 {
         margin-left: 10px;
     }
 
-    .card-1:nth-last-child(1){
+    .card-1:nth-last-child(1) {
         margin-right: 10px;
     }
 
-    .servicos-container{
-        height: 900px;
+    .servicos-container {
+        height: 765px;
     }
 
-    .redes-container{
+    .redes-container {
         display: flex;
         flex-direction: row;
         padding-bottom: 20px;
     }
 
-    .link-redes{
+    .link-redes {
         font-size: 23px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-right: 30px;
+        position: relative;
     }
 
-    .sobre-title,.serv-title,.orc-title{
+    .link-redes:hover .underline {
+        width: 100%;
+    }
+
+    .sobre-title,
+    .serv-title,
+    .orc-title {
         font-size: 4rem;
     }
 
-    .video{
+    .video {
         width: 610px;
         height: 350px;
         outline: none;
@@ -1056,198 +1412,326 @@ li {
     .video::-webkit-media-controls {
         display: none !important;
     }
-    .orc-container{
+
+    .orc-container {
         margin-top: 50px;
-        height: 680px;
+        height: 690px;
     }
-    .p-orc1{
+
+    .p-orc1 {
         font-size: 1.39rem;
     }
 
-    .p-orc2{
+    .p-orc2 {
         font-size: 1.39rem;
     }
-    .orc-btn{
+
+    .orc-btn {
         font-weight: 500;
         font-size: 1.3rem;
     }
 
-    .orc-contain-edit{
+    .orc-contain-edit {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .text-orc{
+    .text-orc {
         margin: 0;
     }
-    
-    .orc-title{
+
+    .orc-title {
         height: 150px;
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0;
+        padding: 5px 0 0 0;
     }
 
-    .logo-bf-orc{
+    .logo-bf-orc {
+        width: 500px;
+        padding-right: 20px;
+    }
+
+    .p-parag-card {
+        padding-top: 8px;
+    }
+}
+
+@media (min-width:1441px) and (max-width:1680px) {
+
+    nav {
+        height: auto;
+        overflow-y: unset;
+        flex-basis: unset;
+    }
+
+    #toggle {
+        display: none;
+    }
+
+    nav ul li {
+        display: inline-block !important;
+        padding: 12px 35px;
+        font-size: 1.6rem;
+    }
+
+    nav ul li a:hover {
+        color: var(--hover-color);
+        transition: 0.3s;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    #nav-menu li {
+        position: relative;
+    }
+
+    .underline {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        background-color: var(--hover-color);
+        width: 0;
+        transition: 0.5s ease;
+    }
+    
+    #nav-menu li:hover .underline {
+        width: 100%;
+    }
+
+    nav a:hover {
+        color: var(--second-color);
+    }
+
+    .p-redes {
+        padding-bottom: 3px;
+    }
+
+    .containInitial-h1 {
+        font-size: 4rem;
+    }
+
+    .containInitial-h2 {
+        font-size: 2.6rem;
+    }
+
+    .container-content {
+        display: flex;
+        align-items: center;
+        padding: 20px 19px;
+        margin-top: 25px;
+    }
+
+    .title-firm {
+        font-size: 3.4rem;
+        padding-left: 0 !important;
+        font-weight: 600;
+    }
+
+    .p-firm {
+        text-align: start;
+        padding-left: 0 !important;
+        font-size: 1.4rem;
+    }
+
+    .p-firm-1 {
+        text-align: start;
+        padding-left: 0 !important;
+        font-size: 1.4rem;
+    }
+
+    .text-explain {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-1 {
+        margin-left: 10px;
+    }
+
+    .card-1:nth-last-child(1) {
+        margin-right: 10px;
+    }
+
+    .servicos-container {
+        height: 825px;
+    }
+
+    .redes-container {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20px;
+    }
+
+    .link-redes {
+        font-size: 23px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 30px;
+        position: relative;
+    }
+
+    .link-redes:hover .underline {
+        width: 100%;
+    }
+
+    .sobre-title,
+    .serv-title,
+    .orc-title {
+        font-size: 4rem;
+    }
+
+    .video {
+        width: 610px;
+        height: 350px;
+        outline: none;
+    }
+
+    .video::-webkit-media-controls {
+        display: none !important;
+    }
+
+    .orc-container {
+        margin-top: 50px;
+        height: 690px;
+    }
+
+    .p-orc1 {
+        font-size: 1.39rem;
+    }
+
+    .p-orc2 {
+        font-size: 1.39rem;
+    }
+
+    .orc-btn {
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+
+    .orc-contain-edit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-orc {
+        margin: 0;
+    }
+
+    .orc-title {
+        height: 150px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 0 0 0;
+    }
+
+    .logo-bf-orc {
         width: 500px;
         padding-right: 20px;
     }
 }
 
-@media (min-width:1441px) and (max-width:1680px){
+@media (min-width:1681px) and (max-width:1920px) {
+
+    nav {
+        height: auto;
+        overflow-y: unset;
+        flex-basis: unset;
+    }
+
+    #toggle {
+        display: none;
+    }
+
+    nav ul li {
+        display: inline-block !important;
+        padding: 12px 30px;
+        font-size: 1.6rem;
+    }
+
+    nav ul li a:hover {
+        color: var(--hover-color);
+        transition: 0.3s;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    #nav-menu li {
+        position: relative;
+    }
+
+    .underline {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        background-color: var(--hover-color);
+        width: 0;
+        transition: 0.5s ease;
+    }
     
-    .containInitial-h1{
+    #nav-menu li:hover .underline {
+        width: 100%;
+    }
+
+    nav a:hover {
+        color: var(--second-color);
+    }
+
+    .p-redes {
+        padding-bottom: 3px;
+    }
+
+    .bf-logo {
+        width: 260px;
+    }
+
+    .containInitial-h1 {
         font-size: 4rem;
     }
 
-    .containInitial-h2{
-        font-size: 2.6rem;
+    .containInitial-h2 {
+        font-size: 3rem;
     }
 
-    .container-content{
+    .container-content {
         display: flex;
         align-items: center;
-        padding: 20px 19px;
+        padding: 110px 30px;
         margin-top: 25px;
     }
 
-    .title-firm{
-        font-size: 3.4rem;
-        padding-left: 0 !important;
-        font-weight: 600;
+    .sobre-container {
+        height: 850px;
+        position: relative;
     }
 
-    .p-firm{
-        text-align: start;
-        padding-left: 0 !important;
-        font-size: 1.4rem;
-    }
-
-    .p-firm-1{
-        text-align: start;
-        padding-left: 0 !important;
-        font-size: 1.4rem;
-    }
-
-    .text-explain{
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-    }
-
-    .card-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .card-1{
-        margin-left: 10px;
-    }
-
-    .card-1:nth-last-child(1){
-        margin-right: 10px;
-    }
-
-    .servicos-container{
-        height: 900px;
-    }
-
-    .redes-container{
-        display: flex;
-        flex-direction: row;
-        padding-bottom: 20px;
-    }
-
-    .link-redes{
-        font-size: 23px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 30px;
-    }
-
-    .sobre-title,.serv-title,.orc-title{
-        font-size: 4rem;
-    }
-
-    .video{
-        width: 610px;
-        height: 350px;
-        outline: none;
-    }
-
-    .video::-webkit-media-controls {
-        display: none !important;
-    }
-    .orc-container{
-        margin-top: 50px;
-        height: 680px;
-    }
-    .p-orc1{
-        font-size: 1.39rem;
-    }
-
-    .p-orc2{
-        font-size: 1.39rem;
-    }
-    .orc-btn{
-        font-weight: 500;
-        font-size: 1.3rem;
-    }
-
-    .orc-contain-edit{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .text-orc{
-        margin: 0;
-    }
-    
-    .orc-title{
-        height: 150px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-    }
-
-    .logo-bf-orc{
-        width: 500px;
-        padding-right: 20px;
-    }
-}
-
-@media (min-width:1681px) and (max-width:1920px){
-
-    .bf-logo{
-        width: 300px;
-    }
-
-    .containInitial-h1{
-        font-size: 5rem;
-    }
-
-    .containInitial-h2{
-        font-size: 3.6rem;
-    }
-
-    .container-content{
-        display: flex;
-        align-items: center;
-        padding: 110px 19px;
-        margin-top: 25px;
-    }
-
-    .video{
-        width: 800px;
+    .video {
+        width: 750px;
         height: 450px;
         outline: none;
     }
@@ -1256,96 +1740,113 @@ li {
         display: none !important;
     }
 
-    .title-firm{
-        font-size: 5.2rem;
+    .title-firm {
+        font-size: 4.6rem;
         padding-left: 0 !important;
         font-weight: 600;
     }
 
-    .p-firm{
+    .p-firm {
         text-align: start;
         padding-left: 0 !important;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
-    .p-firm-1{
+    .p-firm-1 {
         text-align: start;
         padding-left: 0 !important;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
-    .text-explain{
+    .text-explain {
         display: flex;
         flex-direction: column;
         align-items: start;
     }
 
-    .card-container{
+    .card-container {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        height: 620px;
     }
 
-    .card-1{
+    .card-1 {
         margin-left: 10px;
     }
 
-    .card-1:nth-last-child(1){
+    .card-1:nth-last-child(1) {
         margin-right: 10px;
     }
 
-    .servicos-container{
-        height: 900px;
+    .servicos-container {
+        height: 880px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
     }
 
-    .redes-container{
+    .redes-container {
         display: flex;
         flex-direction: row;
         padding-bottom: 20px;
+        justify-content: center;
+        align-items: center;
     }
 
-    .link-redes{
+    .link-redes {
         font-size: 23px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-right: 30px;
+        position: relative;
+    }
+    
+    .link-redes:hover .underline {
+        width: 100%;
     }
 
-    .sobre-title,.serv-title,.orc-title{
+    .sobre-title,
+    .serv-title,
+    .orc-title {
         font-size: 4rem;
     }
 
-    .orc-container{
+    .orc-container {
         margin-top: 50px;
         height: 850px;
+        padding: 5px 0 0 0;
     }
-    .p-orc1{
+
+    .p-orc1 {
         font-size: 2rem;
     }
 
-    .p-orc2{
+    .p-orc2 {
         font-size: 2rem;
     }
-    .orc-btn{
+
+    .orc-btn {
         font-weight: 500;
         font-size: 1.3rem;
     }
 
-    .orc-contain-edit{
+    .orc-contain-edit {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .text-orc{
+    .text-orc {
         margin: 0;
         width: 1008px;
         height: 400px;
     }
-    
-    .orc-title{
+
+    .orc-title {
         height: 150px;
         text-align: center;
         display: flex;
@@ -1354,15 +1855,13 @@ li {
         padding: 0;
     }
 
-    .btn-orc-presentation{
-        font-size: 24px;
-        font-weight: 300;
-    }
-
-    .logo-bf-orc{
-        width: 680px;
+    .logo-bf-orc {
+        width: 580px;
         padding-right: 20px;
     }
+
+    .orc-btn-header:hover {
+        padding: 20px 20px;
+        transition: 0.1s;
+    }
 }
-
-
