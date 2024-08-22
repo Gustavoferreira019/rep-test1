@@ -1,7 +1,7 @@
 :root {
     --main-color: #d1ba8e;
-    --second-color: #654a14;
-    --hover-color: #42300c;
+    --second-color: #3d2a04;
+    --hover-color: #221702;
     --padding-secoes: 15px;
 }
 
@@ -345,7 +345,7 @@ li {
 }
 
 .orc-btn-header {
-    background-color: var(--second-color);
+    background-color: #3d2a04;
     padding: 15px 25px;
     border-radius: 5px;
     color: #fff;
