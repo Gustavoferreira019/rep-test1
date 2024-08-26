@@ -236,7 +236,7 @@ li {
 
     .bi-map-fill,
     .bi-house-door-fill,
-    .bi-recycle,
+    .bi-box2-fill,
     .bi-buildings-fill {
         color: white;
     }
@@ -264,7 +264,7 @@ li {
     color: var(--second-color);
 }
 
-.bi-recycle {
+.bi-box2-fill {
     font-size: 100px;
     color: var(--second-color);
 }
@@ -2724,7 +2724,7 @@ li {
     
         .bi-map-fill,
         .bi-house-door-fill,
-        .bi-recycle,
+        .bi-box2-fill,
         .bi-buildings-fill {
             color: white;
         }
@@ -3087,7 +3087,7 @@ li {
     
         .bi-map-fill,
         .bi-house-door-fill,
-        .bi-recycle,
+        .bi-box2-fill,
         .bi-buildings-fill {
             color: white;
         }
@@ -3454,7 +3454,7 @@ li {
     
         .bi-map-fill,
         .bi-house-door-fill,
-        .bi-recycle,
+        .bi-box2-fill,
         .bi-buildings-fill {
             color: white;
         }
